@@ -33,12 +33,8 @@ import java.util.Date;
  *
  * @author ingSW20
  */
-<<<<<<< HEAD
 
-public class    DBController {
-=======
 public class DBController {
->>>>>>> ff294eb592e96e3650d135a3648d6878407df124
 
     /**
      * referenza alla root del database
