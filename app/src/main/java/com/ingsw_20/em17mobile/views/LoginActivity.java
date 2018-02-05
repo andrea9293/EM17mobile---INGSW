@@ -157,6 +157,7 @@ public class LoginActivity extends AppCompatActivity implements Observer {
                 printToastMessage("LogIn eseguito con successo");
                 AllViewController.getInstance().toMainActivity(this);
             } else {
+                dialog.dismiss();
                 wrongCredentials();
             }
         } else {
