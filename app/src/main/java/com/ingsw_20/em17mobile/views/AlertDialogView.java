@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -60,10 +59,9 @@ public class AlertDialogView implements Observer {
      * mainActivity e scanController, inoltre registra la view nel model secondo i canoni del
      * design pattern proprio dell'MVC
      *
-     * @param mainActivity
      * @param scanController
      */
-    AlertDialogView(MainActivity mainActivity, ScanController scanController) {
+    AlertDialogView(ScanController scanController) {
         TicketModel.getInstance().addObserver(this);
         AlertDialogView.scanController = scanController;
 

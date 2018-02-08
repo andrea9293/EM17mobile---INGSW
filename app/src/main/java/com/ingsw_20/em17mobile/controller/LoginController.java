@@ -76,7 +76,6 @@ public class LoginController {
             // trovi improvvisamente offline
             DBController.getInstance().setReference();
 
-            // il biglietto è valido e lo comunico al model
             LoginModel.getInstance().setLogged(true);
         } catch (NullPointerException e) {
             // Nel caso in cui l'utente non sia connesso, l'utente vedrà semplicemente la schermata di login

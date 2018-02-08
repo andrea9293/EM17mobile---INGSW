@@ -1,7 +1,6 @@
 package com.ingsw_20.em17mobile.views;
 
 import android.Manifest;
-import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
@@ -121,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements Observer {
 
         // inizializzo la classe della view responsabile dei popup
         // passandogli anche il fragmentManager utile per la visualizzazione del popup
-        alertDialogView = new AlertDialogView(this, scanController);
+        alertDialogView = new AlertDialogView(scanController);
         Log.d(TAG, "assegno il fragment");
         AlertDialogView.fragmentManager = getSupportFragmentManager();
         Log.d(TAG, "fragment assegnato");

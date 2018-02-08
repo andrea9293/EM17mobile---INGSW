@@ -150,6 +150,7 @@ public class LoginActivity extends AppCompatActivity implements Observer {
     @Override
     public void update(Observable o, Object arg) {
         if (LoginModel.getInstance().isNetworkConnection()) {
+
             if (LoginModel.getInstance().getLogged()) {
                 if (dialog != null) {
                     dialog.dismiss();
